@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                // Checkout code from the GitHub repository
+                // Checkout code from the GitHub repository testing
                 git branch: 'main', credentialsId: '84ecae54-b617-45a1-908c-3dce823c3715', url: 'https://github.com/mayankPratap-spec/terraform_CICD.git'
             }
         }
