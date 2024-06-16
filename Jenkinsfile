@@ -11,7 +11,7 @@ pipeline {
         
         stage('Initialize Terraform') {
             steps {
-                // Initialize Terraform in the project directory
+                // Initialize Terraform in the project directory immediately
                 sh 'terraform init'
             }
         }
